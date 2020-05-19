@@ -70,7 +70,7 @@ if ($human != "") {print "<meta http-equiv=\"refresh\" content=\"0;URL=$spambot\
 else {
 	if($fullname == '') {print "<meta http-equiv=\"refresh\" content=\"0;URL=$error\">";} 
 	else {
-		if($zip == '') {print "<meta http-equiv=\"refresh\" content=\"0;URL=$error\">";} 
+		if($email == '') {print "<meta http-equiv=\"refresh\" content=\"0;URL=$error\">";} 
 		else { 
 			$success = mail($EmailTo, $Subject, $Body, $headers);
 		
