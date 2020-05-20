@@ -32,6 +32,7 @@
 
 label {
   color: #ccc;
+  flex: 1 1 auto;
 }
 
 .submit {
