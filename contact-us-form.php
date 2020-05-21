@@ -1,10 +1,10 @@
 <?php
 /* Who should this form be sent to? */
-$EmailTo = "ryan@websiteandprint.com";
+$EmailTo = "hello@tannerpontius.com";
 
 /* If an email address is not required in the form, then you must use yours as the FROM */
 /* To do this, UNcomment the line below and use your email address.*/
-$Email = "ryan@websiteandprint.com";
+$Email = "hello@tannerpontius.com";
 
 /* The subject of the email */
 $Subject = "Wells Pools: Contact Form";
@@ -27,19 +27,10 @@ $telephone = clean_string($_POST['phone']);
 $email = clean_string($_POST['email']);
 $referred = clean_string($_POST['referred']);
 $referredMethod = clean_string($_POST['referredMethod']);
+$referredPerson = clean_string($_POST['referredPerson']);
 $message = clean_string($_POST['message']);
 
-/* Handling the Select and Radio Inputs */
 
-// if(isset($_POST['submit']) )
-// {
-//   $referred = $_POST['referred'];
-//   $varName = $_POST['formName'];
-//   $varGender = $_POST['formGender'];
-//   $errorMessage = "";
-
-//   // - - - snip - - - 
-// }
 
 
 
@@ -62,6 +53,7 @@ $Body .= '<strong>Email: </strong>'.$email.'<br />';
 $Body .= '<strong>Telephone: </strong>'.$telephone.'<br />';
 $Body .= '<strong>Referred: </strong>'.$referred.'<br />';
 $Body .= '<strong>Referred Method: </strong>'.$referredMethod.'<br />';
+$Body .= '<strong>Referred Person: </strong>'.$referredPerson.'<br />';
 $Body .= '<strong>How May We Help You: </strong>'.$message.'<br />';
 $Body .= '</body></html>';
 

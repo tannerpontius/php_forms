@@ -166,7 +166,13 @@
 					  </select>
 					</div>
 				  </div>
-			  
+				  
+				  <!-- Hidden Reffered By Field -->
+				  <div class="contact-field byWhom">
+					<label for="referredPerson">Who referred you?</label>  
+					<input name="referredPerson" id="referredPerson" type="text">
+				  </div>
+
 				  <div class="contact-field">
 					<label>How can we help?</label>
 					<textarea name="message" id="message" cols="50" rows="10"></textarea>
@@ -322,10 +328,11 @@ document.write(now.getFullYear());
 </footer>
 
 <script type="text/javascript">
-jQuery("#inf_custom_Howdidyouhearaboutus1").change(function(){
+
+jQuery("#referredMethod").change(function(){
 	var a = jQuery(this).val();
-	if (a == 'Referral')  {
-		jQuery(".byWhom").slideDown();
+	if (a == 'referral')  {
+		jQuery(".byWhom").show().slideDown();
 	} else {
 		jQuery(".byWhom").slideUp();
 	}
