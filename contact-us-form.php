@@ -1,10 +1,10 @@
 <?php
 /* Who should this form be sent to? */
-$EmailTo = "hello@tannerpontius.com";
+$EmailTo = "ryan@websiteandprint.com";
 
 /* If an email address is not required in the form, then you must use yours as the FROM */
 /* To do this, UNcomment the line below and use your email address.*/
-$Email = "hello@tannerpontius.com";
+$Email = "ryan@websiteandprint.com";
 
 /* The subject of the email */
 $Subject = "Wells Pools: Contact Form";

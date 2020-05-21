@@ -22,6 +22,7 @@
 .field input {
   padding: 5px;
   max-width: 250px;
+  flex: 1 1 auto;
 }
 
 .fieldSubmit {
@@ -47,18 +48,6 @@ label {
 
 /* Contact us form styles */
 
-/* body {
-  padding: 100px 0;
-  background: black;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-} */
-
-.contact-form {
-  min-width: 600px;
-}
 
 .contact-field {
   padding: 25px;
@@ -73,21 +62,35 @@ label {
   margin-bottom: 10px;
 }
 
-.radio,
-.select {
-  width: 27%;
-}
-
 input {
-  padding: 5px;
+  padding: 7px 5px;
+  width: 50%;
+  font-size: 16px;
 }
 
-select {
-  width: 100%;
+textarea {
+  width: 50%;
+}
+
+input[type="select" i] {
+  height: 2em;
+  width: 30%;
+}
+
+input[type="radio"] {
+  width: 2em;
+}
+
+.radio {
+  display: flex;
 }
 
 label {
   color: #ccc;
+}
+#referredMethod {
+  height: 30px;
+  width: 15em;
 }
 
 .submit {
@@ -97,4 +100,44 @@ label {
   color: white;
   border: none;
   font-size: 14px;
+}
+
+@media (max-width: 425px) {
+  .contact-field, .field, #formGuideContainer {
+    display: block;
+    padding: 10px;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .select {
+    min-width: 10em;
+    margin-top: 10px;
+  }
+
+  input {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  textarea {
+    width: auto;
+    margin-top: 10px;
+  }
+
+  #referredMethod {
+    width: 100%;
+  }
+
+  .radio, .select {
+    display: flex;
+    width: 60%;
+  }
+  input[type="radio"] {
+    width: 15px;
+  }
+  #formGuideContainer {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
 }
