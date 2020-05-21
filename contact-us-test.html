@@ -135,7 +135,7 @@
 					<input id="phone" name="phone" type="tel" >
 				  </div>
 			  
-				  <div class="contact-field">
+				  <div class="contact-field hidden">
 					<label>Were you referred to us?</label><br>
 					<div class="radio">
 					  <input type="radio" id="yes" name="referred" value="yes">
@@ -147,7 +147,7 @@
 				  </div>
 			  
 				  <div class="contact-field">
-					<label>If yes please let us know who</label>
+					<label>How did you hear about us?</label>
 					<div class="select">
 					  <select id="referredMethod" name="referredMethod">
 						<option value="starter" selected>Please select one</option>
@@ -239,8 +239,8 @@
 							</div>
 						
 							<div class="field">
-							  <label for="zip">Zip *</label>
-							  <input type="text" id="zip" name="zip" required>
+							  <label for="zip">Zip</label>
+							  <input type="text" id="zip" name="zip">
 							</div>
 						
 							<div class="fieldSubmit">
@@ -328,6 +328,8 @@ document.write(now.getFullYear());
 </footer>
 
 <script type="text/javascript">
+
+jQuery(".byWhom").hide();
 
 jQuery("#referredMethod").change(function(){
 	var a = jQuery(this).val();
