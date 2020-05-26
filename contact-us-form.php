@@ -25,7 +25,6 @@ function clean_string($string) {
 $fullname = clean_string($_POST['fullname']);
 $telephone = clean_string($_POST['phone']);
 $email = clean_string($_POST['email']);
-$referred = clean_string($_POST['referred']);
 $referredMethod = clean_string($_POST['referredMethod']);
 $referredPerson = clean_string($_POST['referredPerson']);
 $message = clean_string($_POST['message']);
@@ -51,7 +50,6 @@ $Body = '<html><body>';
 $Body .= '<strong>Name: </strong>'.$fullname.'<br />';
 $Body .= '<strong>Email: </strong>'.$email.'<br />';
 $Body .= '<strong>Telephone: </strong>'.$telephone.'<br />';
-$Body .= '<strong>Referred: </strong>'.$referred.'<br />';
 $Body .= '<strong>Referred Method: </strong>'.$referredMethod.'<br />';
 $Body .= '<strong>Referred Person: </strong>'.$referredPerson.'<br />';
 $Body .= '<strong>How May We Help You: </strong>'.$message.'<br />';
