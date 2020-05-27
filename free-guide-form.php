@@ -1,10 +1,10 @@
 <?php
 /* Who should this form be sent to? */
-$EmailTo = "ryan@websiteandprint.com";
+$EmailTo = "hello@tannerpontius.com";
 
 /* If an email address is not required in the form, then you must use yours as the FROM */
 /* To do this, UNcomment the line below and use your email address.*/
-$Email = "ryan@websiteandprint.com";
+$Email = "hello@tannerpontius.com";
 
 /* The subject of the email */
 $Subject = "Wells Pools: Free Guide Contact Form";
@@ -12,7 +12,7 @@ $Subject = "Wells Pools: Free Guide Contact Form";
 /* The thank you page upon success, and error on spam or missing fields. */
 /* If you don't want to let the spammer know you caught them, just send them to the normal thank you page. */
 /* Their junk email will still not be sent if caught by the honeybpot */
-$Thanks = "thank-you.html";
+$Thanks = "thank-you-10-steps-report.html";
 $error = "error.html";
 $spambot = "error.html";
 
@@ -34,7 +34,7 @@ $human = $_REQUEST['question'];
 /* No need to edit this section */
 $success = ""; /* clear field */
 $headers = "From: <$Email>\r\n";
-$headers .= "Reply-To: <$Email>\r\n";
+$headers .= "Reply-To: <$email>\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 

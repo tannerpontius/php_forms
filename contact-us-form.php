@@ -41,7 +41,7 @@ $human = $_REQUEST['question'];
 /* No need to edit this section */
 $success = ""; /* clear field */
 $headers = "From: <$Email>\r\n";
-$headers .= "Reply-To: <$Email>\r\n";
+$headers .= "Reply-To: <$email>\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
